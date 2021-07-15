@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     # Specifically check that dependabot (or another trusted party) created this pull-request.
-    if: github.event.pull_request.user.login == 'dependabot[bot]'
+    # if: github.event.pull_request.user.login == 'dependabot[bot]'
     steps:
     - name: Enable Github Automerge
       uses: alexwilson/enable-github-automerge-action@1.0.0
