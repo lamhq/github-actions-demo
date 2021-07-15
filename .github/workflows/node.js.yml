@@ -10,7 +10,7 @@ on:
     branches: [ master ]
 
 jobs:
-  run-unit-test:
+  unit-test:
 
     runs-on: ubuntu-latest
 
