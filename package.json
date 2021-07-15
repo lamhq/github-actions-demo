@@ -1,0 +1,35 @@
+{
+  "name": "github-actions-demo",
+  "version": "0.0.0",
+  "description": "Demo setup ci/cd workflow for Node.js project",
+  "author": "lamhq",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet",
+    "deploy": "firebase deploy --only hosting",
+    "release": "standard-version --no-verify && git push --follow-tags --no-verify"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts,tsx}": [
+      "eslint --fix"
+    ]
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "eslint": "7.2.0",
+    "husky": "^4.3.7",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "standard-version": "^9.1.0"
+  }
+}
