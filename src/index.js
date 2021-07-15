@@ -1,3 +1,3 @@
 export function calc(a) {
-  return a * 7;
+  return a * 8;
 }
