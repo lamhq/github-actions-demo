@@ -1,4 +1,4 @@
-name: Auto-Merge
+name: Enable Auto Merge
 on:
   pull_request_target
 
