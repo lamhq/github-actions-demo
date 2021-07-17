@@ -8,7 +8,7 @@
   "scripts": {
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet",
     "deploy": "echo 'deployed'",
-    "release": "standard-version --no-verify && git push --follow-tags --no-verify"
+    "release": "standard-version --no-verify"
   },
   "husky": {
     "hooks": {
