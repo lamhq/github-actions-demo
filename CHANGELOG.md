@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.8 (2021-07-19)
+
+
+### Features
+
+* release workflow ([ab266a0](https://github.com/lamhq/github-actions-demo/commit/ab266a0b72829a43bf8b4934387d21b9469d6dc4))
+
 ### 0.0.7 (2021-07-19)
 
 
