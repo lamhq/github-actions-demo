@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.7 (2021-07-19)
+
+
+### Features
+
+* test checkout to commit ([ea7d2bd](https://github.com/lamhq/github-actions-demo/commit/ea7d2bd39451eb1aac3cb392661d9ef63b9de7ad))
+
 ### 0.0.6 (2021-07-19)
 
 
