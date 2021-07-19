@@ -17,13 +17,13 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Checkout to commit
+      - name: Checkout to specified commit
         run: git checkout ${{ github.event.inputs.commit }}
 
       - name: Print current commit
         run: git status
    
-      - name: Extract version
+      - name: Get current version
         id: npm_package_version
         uses: Saionaro/extract-package-version@v1.0.6   
 
