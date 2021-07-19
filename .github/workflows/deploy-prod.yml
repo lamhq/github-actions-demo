@@ -1,14 +1,14 @@
 name: Deploy to Production
 on:
-  push:
-    branches:
-      - master
-  # workflow_dispatch:
-  #   inputs:
-  #     commit:
-  #       description: 'Commit hash'
-  #       required: true
-  #       default: 'HEAD'
+  # push:
+  #   branches:
+  #     - master
+  workflow_dispatch:
+    inputs:
+      commit:
+        description: 'Commit hash'
+        required: true
+        default: 'HEAD'
 
 jobs:
   deploy_to_production:
@@ -21,7 +21,7 @@ jobs:
           fetch-depth: 0
 
       - name: Checkout commit
-        run: git checkout c083186
+        run: git checkout ${{ github.event.inputs.commit }}
 
       - name: Print current commit
         run: git status
