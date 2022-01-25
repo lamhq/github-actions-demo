@@ -1,0 +1,29 @@
+name: Deploy
+
+on:
+  push:
+    tags:      
+      - v*
+
+jobs:
+  deploy_to_test:
+    environment: test
+    name: Deploy to Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Print code content
+        run: cat src/index.js
+
+  deploy_to_production:
+    environment: prod
+    name: Deploy to Production
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Print code content
+        run: cat src/index.js

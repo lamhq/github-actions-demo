@@ -1,3 +1,3 @@
-export function calc(a) {
-  return a * 10;
+export function getVersion() {
+  return '1.0.0';
 }
